@@ -33,7 +33,7 @@ A Nuxt 3 starter template or boilerplate with a lot of useful features. and inte
 </table>
 <p align="center">
   <br>
-  <a href="https://nuxt3-starter-delta.vercel.app/" target="_blank">
+  <a href="https://nuxt3-starter-renatoxm.vercel.app/" target="_blank">
     Live Demo
   </a>
   <br><br>
@@ -66,7 +66,7 @@ A Nuxt 3 starter template or boilerplate with a lot of useful features. and inte
 
 ## Quick Start
 
-For detail information, go here [Getting Started](https://nuxt3-starter-delta.vercel.app/getting-started)
+For detail information, go here [Getting Started](https://nuxt3-starter-renatoxm.vercel.app/)
 
 ### Start with this template
 
