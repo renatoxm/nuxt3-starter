@@ -38,7 +38,7 @@ const randomToken = () => {
 }
 
 // state
-const username = ref('viandwi24')
+const username = ref('renatoxm')
 const id = ref(randomToken())
 const enableSpamProtection = ref(false)
 const enableDirList = ref(false)
@@ -90,10 +90,10 @@ const validate = async () => {
             <HeadlessUiTab v-slot="{ selected }" as="template">
               <button
                 :class="[
-                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
+                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-zinc-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
                   selected
                     ? 'font-extrabold'
-                    : 'text-slate-800 dark:text-gray-400',
+                    : 'text-zinc-800 dark:text-gray-400',
                 ]"
               >
                 General
@@ -102,10 +102,10 @@ const validate = async () => {
             <HeadlessUiTab v-slot="{ selected }" as="template">
               <button
                 :class="[
-                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
+                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-zinc-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
                   selected
                     ? 'font-extrabold'
-                    : 'text-slate-800 dark:text-gray-400',
+                    : 'text-zinc-800 dark:text-gray-400',
                 ]"
               >
                 Protection
@@ -114,10 +114,10 @@ const validate = async () => {
             <HeadlessUiTab v-slot="{ selected }" as="template">
               <button
                 :class="[
-                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
+                  'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5 transition-all hover:bg-gray-200 hover:text-zinc-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
                   selected
                     ? 'font-extrabold'
-                    : 'text-slate-800 dark:text-gray-400',
+                    : 'text-zinc-800 dark:text-gray-400',
                 ]"
               >
                 Advanced

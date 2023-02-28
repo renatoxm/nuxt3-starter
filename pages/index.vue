@@ -8,27 +8,6 @@ definePageMeta({
 })
 
 // vars
-const titlesText = computed<string[]>(() => t('pages.index.title').split('[]'))
-const leadingsText = computed(() => [
-  {
-    text: titlesText.value[0],
-    startColor: '#007CF0',
-    endColor: '#00DFD8',
-    delay: 0,
-  },
-  {
-    text: titlesText.value[1],
-    startColor: '#7928CA',
-    endColor: '#FF0080',
-    delay: 2,
-  },
-  {
-    text: titlesText.value[2],
-    startColor: '#FF4D4D',
-    endColor: '#F9CB28',
-    delay: 4,
-  },
-])
 const tooltip = ref(false)
 
 // const
@@ -38,7 +17,7 @@ const cancelTooltip = () => {
   if (tt) tt.innerHTML = `Copy to clipboard`
 }
 const copyBash = () => {
-  const bash = 'git clone https://github.com/viandwi24/nuxt3-awesome-starter'
+  const bash = 'git clone https://github.com/renatoxm/nuxt3--starter'
   navigator.clipboard.writeText(bash)
   tooltip.value = true
   const tt = document.querySelector('.tooltiptext')
@@ -48,35 +27,23 @@ const copyBash = () => {
 
 <template>
   <PageWrapper class="flex-1 flex">
-    <div class="background-overlay">
-      <div
-        class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"
-      ></div>
-      <div
-        class="absolute hidden md:block top-0 left-0 transform translate-x-18 translate-y-20 h-28 w-28 rounded-full bg-blue-600 linear-wipe"
-      ></div>
-      <div
-        class="absolute hidden md:block bottom-0 right-0 transform -translate-x-4 -translate-y-40 h-16 w-16 rounded bg-purple-600 linear-wipe"
-      ></div>
-      <div class="absolute bottom-0 right-0 triangle-shape"></div>
-    </div>
     <PageBody class="flex-1 flex">
       <PageSection class="flex-1 flex items-center">
         <div class="flex-1 md:w-5/8 flex flex-col z-10">
-          <h1 class="text-center md:text-left mt-4">
-            <span
-              v-for="(item, i) in leadingsText"
-              :key="i"
-              :style="`--content: '${item.text}'; --start-color: ${
-                item.startColor
-              }; --end-color: ${item.endColor}; --animation-name: anim-fg-${
-                i + 1
-              }`"
-              class="animated-text-bg drop-shadow-xl text-5xl xl:text-8xl 2xl:text-9xl block font-black uppercase"
+          <div class="max-w-2xl">
+            <h1
+              class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl"
             >
-              <span class="animated-text-fg">{{ item.text }}</span>
-            </span>
-          </h1>
+              Nuxt 3 Starter Project
+            </h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              A Nuxt 3 boilerplate with a lot of useful features. This template
+              was built to make it easier to create web projects using Nuxt 3.
+              It is Fully integrated with WindiCSS a Tailwind CSS successor
+              which provides faster load times, full compatibility with
+              Tailwind, and a bunch of additional cool features.
+            </p>
+          </div>
           <div
             class="flex space-x-4 ml-4 mt-10 justify-center md:justify-start"
           >
@@ -91,15 +58,14 @@ const copyBash = () => {
               text="Github"
               type="secondary"
               class="font-extrabold"
-              href="https://github.com/viandwi24/nuxt3-awesome-starter"
+              href="https://github.com/renatoxm/nuxt3--starter"
             />
           </div>
         </div>
         <div class="hidden md:flex md:w-3/8 justify-center items-end relative">
-          <Gem class="absolute -top-64 -right-0" />
           <div class="ml-4 w-100 z-10 h-auto shadow">
             <div
-              class="win-header bg-gray-200 dark:bg-slate-800 flex flex space-x-4 px-3 py-2 rounded-t-lg relative border-b-2 border-gray-300/75 dark:border-slate-700/75"
+              class="win-header bg-gray-200 dark:bg-zinc-800 flex flex space-x-4 px-3 py-2 rounded-t-lg relative border-b-2 border-gray-300/75 dark:border-zinc-700/75"
             >
               <div class="win-controls flex space-x-1 items-center">
                 <div class="w-3 h-3 bg-red-500 rounded-full" />
@@ -121,11 +87,9 @@ const copyBash = () => {
               </div>
             </div>
             <div
-              class="win-body rounded-b-lg bg-gray-200/90 dark:bg-slate-800/90 px-3 py-2 font-mono backdrop-filter backdrop-blur-lg"
+              class="win-body rounded-b-lg bg-gray-200/90 dark:bg-zinc-800/90 px-3 py-2 font-mono backdrop-filter backdrop-blur-lg"
             >
-              <div>
-                $ git clone https://github.com/viandwi24/nuxt3-awesome-starter
-              </div>
+              <div>$ git clone https://github.com/renatoxm/nuxt3--starter</div>
             </div>
           </div>
         </div>
@@ -187,7 +151,7 @@ const copyBash = () => {
   content: var(--content);
   display: block;
   width: 100%;
-  color: theme('colors.slate.800');
+  color: theme('colors.zinc.800');
   top: 0;
   bottom: 0;
   left: 0;
@@ -199,7 +163,7 @@ const copyBash = () => {
     position: absolute;
     display: block;
     width: 100%;
-    color: theme('colors.slate.800');
+    color: theme('colors.zinc.800');
     top: 0;
     bottom: 0;
     left: 0;

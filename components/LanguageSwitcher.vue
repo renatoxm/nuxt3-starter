@@ -36,7 +36,7 @@ const localeSetting = useState<string>('locale.setting')
         class="transition-colors duration-300"
       >
         <span class="justify-center items-center flex">
-          <IconLa:language />
+          <IconMdi:language />
         </span>
       </ListboxButton>
       <ListboxOptions

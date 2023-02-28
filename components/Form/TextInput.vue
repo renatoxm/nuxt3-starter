@@ -65,7 +65,7 @@ const selectedFontSizeStyle = computed(
   <div :class="`text-input-container relative flex`">
     <div
       v-if="slots['prefix-disabled']"
-      :class="`flex rounded-l bg-gray-100 dark:bg-slate-800 text-gray-500 border ${selectedBorderStyle}`"
+      :class="`flex rounded-l bg-gray-100 dark:bg-zinc-800 text-gray-500 border ${selectedBorderStyle}`"
     >
       <slot name="prefix-disabled" />
     </div>

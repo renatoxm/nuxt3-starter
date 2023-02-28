@@ -30,7 +30,7 @@ useHead(() => ({
           <div
             class="block hover:no-underline p-6 flex space-x-6 rounded border border-gray-900/10 dark:border-gray-50/[0.2]"
           >
-            <div class="mt-1 text-slate-600 dark:text-gray-400 text-right">
+            <div class="mt-1 text-zinc-600 dark:text-gray-400 text-right">
               <div>{{ article.date }}</div>
               <Anchor
                 class="text-sm flex items-center justify-end space-x-1"
@@ -42,11 +42,11 @@ useHead(() => ({
             </div>
             <div class="flex flex-col">
               <div
-                class="text-xl font-semibold text-slate-800 dark:text-gray-50"
+                class="text-xl font-semibold text-zinc-800 dark:text-gray-50"
               >
                 {{ article.title }}
               </div>
-              <div class="text-slate-700 dark:text-gray-300 mb-1">
+              <div class="text-zinc-700 dark:text-gray-300 mb-1">
                 {{ article.description }}
               </div>
               <div class="flex">

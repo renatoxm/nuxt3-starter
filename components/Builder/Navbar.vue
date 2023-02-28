@@ -51,7 +51,7 @@ const toggleOptions = (show?: boolean) => {
 <template>
   <div
     ref="navbar"
-    class="backdrop-filter backdrop-blur-md top-0 z-40 w-full flex-none transition-colors duration-300 lg:z-50 border-b border-gray-900/10 dark:border-gray-50/[0.2] bg-white/[0.5] dark:bg-slate-900/[0.5]"
+    class="backdrop-filter backdrop-blur-md top-0 z-40 w-full flex-none transition-colors duration-300 lg:z-50 border-b border-gray-900/10 dark:border-gray-50/[0.2] bg-white/[0.5] dark:bg-zinc-900/[0.5]"
   >
     <div id="navbar-banner" class="banner">
       <slot name="banner" />
@@ -123,7 +123,7 @@ const toggleOptions = (show?: boolean) => {
         <Transition name="slide-fade-from-up" mode="out-in">
           <div
             v-if="showDrawer && $slots['drawer']"
-            class="fixed lg:hidden bg-gray-100 dark:bg-slate-800 pt-12 top-0 left-0 w-screen h-screen z-30 flex flex-col"
+            class="fixed lg:hidden bg-gray-100 dark:bg-zinc-800 pt-12 top-0 left-0 w-screen h-screen z-30 flex flex-col"
           >
             <div class="flex-1 flex flex-col relative overflow-y-auto">
               <slot name="drawer" :toggle-drawer="toggleDrawer" />
@@ -161,7 +161,7 @@ a.router-link-active {
   font-weight: bold;
 }
 a.router-link-exact-active {
-  color: theme('colors.slate.900');
+  color: theme('colors.zinc.900');
 }
 html.dark {
   a.router-link-exact-active {

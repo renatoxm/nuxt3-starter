@@ -39,7 +39,7 @@ const menus = computed((): IMenuItem[] => [
           <Anchor
             class="underline font-bold"
             :text="$t('others.learn_more')"
-            href="https://github.com/viandwi24/nuxt3-awesome-starter"
+            href="https://github.com/renatoxm/nuxt3-starter"
           />
         </span>
       </div>
@@ -56,7 +56,7 @@ const menus = computed((): IMenuItem[] => [
                 v-if="item.type === 'link'"
                 :to="item.route ? item.route : undefined"
                 :href="item.href ? item.href : undefined"
-                class="hover:no-underline hover:text-slate-900 hover:dark:text-white capitalize"
+                class="hover:no-underline hover:text-zinc-900 hover:dark:text-white capitalize"
                 >{{ item.text }}</Anchor
               >
               <Button
@@ -76,11 +76,11 @@ const menus = computed((): IMenuItem[] => [
           <LanguageSwitcher />
           <ThemeSwitcher />
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
-            href="https://github.com/viandwi24/nuxt3-awesome-starter"
+            class="hover:no-underline hover:text-zinc-900 hover:dark:text-white text-lg flex self-center items-center"
+            href="https://github.com/renatoxm/nuxt3-starter"
             title="Github"
           >
-            <IconMdi:github-face />
+            <IconMdi:github />
           </Anchor>
         </div>
       </div>
@@ -105,8 +105,8 @@ const menus = computed((): IMenuItem[] => [
                   :to="item.route ? item.route : undefined"
                   :href="item.href ? item.href : undefined"
                   class="flex-1 hover:no-underline capitalize"
-                  >{{ item.text }}</Anchor
-                >
+                  >{{ item.text }}
+                </Anchor>
                 <Button
                   v-else-if="item.type === 'button'"
                   :text="item.text"
@@ -134,9 +134,9 @@ const menus = computed((): IMenuItem[] => [
         <Button
           type="secondary"
           title="Github"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
+          href="https://github.com/renatoxm/nuxt3-starter"
         >
-          <IconMdi:github-face />
+          <IconMdi:github />
           <span class="ml-1">Github</span>
         </Button>
         <Button

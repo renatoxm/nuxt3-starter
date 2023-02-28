@@ -9,13 +9,13 @@ const app = useAppConfig() as AppConfigInput
 
 useHead({
   title: app.name,
-  titleTemplate: '%s - Nuxt 3 Awesome Starter',
+  titleTemplate: '%s - Nuxt 3 Starter',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
       hid: 'description',
       name: 'description',
-      content: 'Nuxt 3 Awesome Starter',
+      content: 'Nuxt 3 Starter',
     },
   ],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -25,7 +25,7 @@ useHead({
 <template>
   <Html :class="`${theme === 'dark' ? 'dark' : ''}`" :lang="locale">
     <Body
-      class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900"
+      class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-zinc-900"
     >
       <NuxtLayout>
         <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />

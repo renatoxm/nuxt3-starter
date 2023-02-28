@@ -8,8 +8,8 @@ describe('example', async () => {
     server: true,
   })
 
-  it('Renders Nuxt 3 Awesome Starter', async () => {
-    expect(await $fetch('/')).toMatch('Nuxt 3 Awesome Starter')
+  it('Renders Nuxt 3 Starter', async () => {
+    expect(await $fetch('/')).toMatch('Nuxt 3 Starter')
   })
 
   if (isDev()) {
