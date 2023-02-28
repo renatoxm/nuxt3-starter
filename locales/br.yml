@@ -1,0 +1,72 @@
+components:
+  language_switcher:
+    change_language: alterar linguagem
+  theme_switcher:
+    theme: tema
+    change_theme: alterar tema
+pages:
+  index:
+    title: nuxt 3[]starter
+  404:
+    title: página não encontrada
+  blank:
+    nav: em branco
+    title: página em branco
+    description: esta é uma página em branco
+    just_blank_page_with_title: apenas uma página em branco com título
+  post:
+    nav: post
+    title: post
+    description: esta é uma página de post
+  test:
+    nav: teste
+    title: testando
+    description: esta é uma página de teste
+    counter: contador
+    increment: aumentar
+    decrement: diminuir
+    reset: resetar
+    identity: identidade
+    full_name: nomeCompleto
+  getting-started:
+    nav: iniciando
+    title: iniciando
+    description: esta é a página iniciando
+  setting:
+    nav: configurações
+    title: configurações
+    description: esta é a página de configurações
+    sections:
+      validate_username:
+        title: validar perfil do github
+        description: digite seu perfil no github e clique no butão para validar.
+        footer: Saiba mais sobre
+        footer_button: validar
+        footer_link: api de usuários do github
+      bot_id:
+        title: bot id
+        description: Este é o id do seu Bot.
+        footer: Utilizado quando interagindo com seu bot.
+      protection_spam:
+        title: proteção contra spam
+        description: clique habilitar para remover a borda vermelha
+        footer: se habilitada, irá proteger seus comentários contra spam
+      advanced_enable_advanced:
+        title: permitir configurações avançadas
+        description: você pode habilitar configurações avançadas e alterar suas configurações
+      advanced_dir_listing:
+        title: listagem de diretórios
+        description: se não existir arquivo index presente no diretório, o conteúdo do diretório será exibido.
+  dashboard:
+    nav: dashboard
+    title: dashboard
+    index:
+      nav: home
+      title: home
+banners:
+  welcome: olá, bem vindo ao %{app_name}!
+others:
+  learn_more: saiba mais
+  copy: copiar
+  enabled: habilitado
+  disabled: desabilitado

@@ -6,7 +6,7 @@ components:
     change_theme: 切换主题
 pages:
   index:
-    title: nuxt 3[]awesome[]starter
+    title: nuxt 3[]starter
   404:
     title: 找不到该页面
   blank:

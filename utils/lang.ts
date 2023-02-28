@@ -14,6 +14,11 @@ export const availableLocales: ILocales = {
     iso: 'en',
     flag: '🇺🇸',
   },
+  br: {
+    name: 'Português BR',
+    iso: 'br',
+    flag: '🇧🇷',
+  },
   id: {
     name: 'Bahasa',
     iso: 'id',
