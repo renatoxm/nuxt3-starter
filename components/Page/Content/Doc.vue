@@ -5,7 +5,7 @@
         <PageTitle :text="doc.title" />
       </PageHeader>
       <PageBody>
-        <PageSection>
+        <PageSection class="prose lg:prose-xl max-w-none">
           <ContentRenderer :value="doc" />
         </PageSection>
       </PageBody>

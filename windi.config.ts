@@ -124,7 +124,9 @@ export default defineConfig({
   plugins: [
     // filters plugin require for navbar blur
     FiltersPlugin as Plugin,
-    TypographyPlugin as Plugin,
+    TypographyPlugin({
+      dark: true,
+    }) as Plugin,
     AspectRatioPlugin as Plugin,
   ] as Plugin[],
 })
